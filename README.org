@@ -1,0 +1,69 @@
+#+TITLE: UnWiki
+
+* Idea
+A "static wiki generator" that produces a set of crosslinked pages but without any CMS — only static pages.
+
+** Existing tools
+Here are my thoughts about some software pieces that I found in the Web.
+
+*** Site generators
+**** [[https://gohugo.io][Hugo]]
+- Popular
+- Well documented
+- Not-so-blog-oriented
+
+but *very huge*! So as Jekyll and other competitors.
+
+**** [[https://jaspervdj.be/hakyll/][Hakyll]]
+- Simplistic but extensible
+- Can be used not only for blogs
+- Build using *Haskell*, so i can have
+  - single executable fille (binary)
+  - familiarity with ecosystem.
+
+*** "GitBooks"
+[[https://www.gitbook.com/][GitBook]], [[https://rust-lang.github.io/mdBook/][mdBook]] and others. Good for books but not very suitable for "memory dumps": there always are some linear flow between sections and pages and that flow can't be overridden.
+
+GitBook is SaaS and it's sad...
+
+*** Wikis
+All wiki software that I saw uses the same model: server-side CMS not a static site generator.
+
+**** [[https://ikiwiki.info/][ikiwiki]]
+- Very old-school (Perl!)
+- Very lightweight
+- Can produce sections with separate RSS feeds
+- Pluggable — in Python, not only in Perl!
+
+**** [[https://hackage.haskell.org/package/gitit][Gitit]]
+- Built using Haskell (see above)
+- Produces HTML using [[https://pandoc.org/][Pandoc]]
+- Can export content to PDF, ePub, whatever
+- Can use /Basic HTTP auth/ for authors — simple and nice!
+but
+- Can be extended only with Haskell-scripts (generic Pandoc filters aren't available)
+- Not so lightweight.
+
+** DIY?
+*** Custom code
+I'm not ready to make another generator from scratch. Even with pandoc as formatter and templater.
+
+*** Generators as libraries
+**** Hakyll
+See above
+
+**** [[https://docs.racket-lang.org/pollen/index.html][Pollen]]
+To much document-oriented. Pretty alien to newcomers.
+
+**** [[https://sagegerard.com/polyglot.html][Polyglot]]
+Even more alien, but very powerful and can be used for sites of any kind.
+
+*** Build systems
+**** GNU Make
+Very straightforward way. But I'll need to make some tools anyway: index page generator, link consistency checker. And if I will want to make some custom looking folders or pages I'll need local Makefiles, meh :(
+
+**** [[https://www.bazel.build/][Bazel]]
+Powerful but huge. This is a nice toy to play with it will be too long to make any progress before I become familiar with tooling.
+
+**** [[https://shakebuild.com/][Shake]]
+Haskell-based (yep!) but pretty simple. Familiar. Can be easy customized for all my needs. Not so easy to use for other "authors" :(
