@@ -7,6 +7,8 @@ A "static wiki generator" that produces a set of crosslinked pages but without a
 Here are my thoughts about some software pieces that I found in the Web.
 
 *** Site generators
+I wanted to mention only generators that can produce not only blogs, so it will be pretty short.
+
 **** [[https://gohugo.io][Hugo]]
 - Popular
 - Well documented
@@ -20,6 +22,12 @@ but *very huge*! So as Jekyll and other competitors.
 - Build using *Haskell*, so i can have
   - single executable fille (binary)
   - familiarity with ecosystem.
+
+**** [[https://urubu.jandecaluwe.com/][Urubu]]
+- Python-based
+- Simple but not much
+
+but looks pretty dead for me... Has I courage to maintain it? Who knows.
 
 *** "GitBooks"
 [[https://www.gitbook.com/][GitBook]], [[https://rust-lang.github.io/mdBook/][mdBook]] and others. Good for books but not very suitable for "memory dumps": there always are some linear flow between sections and pages and that flow can't be overridden.
