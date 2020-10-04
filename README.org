@@ -66,6 +66,9 @@ To much document-oriented. Pretty alien to newcomers.
 **** [[https://sagegerard.com/polyglot.html][Polyglot]]
 Even more alien, but very powerful and can be used for sites of any kind.
 
+**** TODO [[https://github.com/ChrisPenner/slick][Slick]]
+This one uses Shake so it can be good starting point for my own Shake-powered generatior.
+
 *** Build systems
 **** GNU Make
 Very straightforward way. But I'll need to make some tools anyway: index page generator, link consistency checker. And if I will want to make some custom looking folders or pages I'll need local Makefiles, meh :(
@@ -75,3 +78,6 @@ Powerful but huge. This is a nice toy to play with it will be too long to make a
 
 **** [[https://shakebuild.com/][Shake]]
 Haskell-based (yep!) but pretty simple. Familiar. Can be easy customized for all my needs. Not so easy to use for other "authors" :(
+* Various stuff
+** [[https://wiki.alopex.li/WikiThoughts][WikiThoughts]]
+Some thoughts of a caouple of expirienced Wiki-users about Wiki Software. And yes, their Wiki made using *Gitit*!
